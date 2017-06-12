@@ -1,32 +1,44 @@
 'use strict';
 const fs = require('fs');
 
-const filename = 'thoughts.txt';
+const home = require('os').homedir()
+const filename = `${home}/.thoughts`;
 
 const getRandomThought = (filename, callback) => {
-  const data = fs.readFileSync(filename, 'utf8');
-  const lines = data.split("\n");
-  const lineNo = Math.floor(Math.random() * lines.length);
+  try {
+    const data = fs.readFileSync(filename, 'utf8');
+    const lines = data.split("\n");
+    const lineNo = Math.floor(Math.random() * lines.length);
 
-  if(+lineNo > lines.length){
-    throw new Error('File end reached without finding line');
+    if(+lineNo > lines.length){
+      callback('File end reached without finding line');
+    }
+
+    callback(null, lines[+lineNo]);
+  } catch (err) {
+    callback('No thoughts found...');
+    return;
   }
-
-  callback(null, lines[+lineNo]);
 }
 
 exports.add = thought => {
-  fs.appendFile(filename, `\n${thought}`, err => {
+  const fileExists = fs.existsSync(filename);
+  const newLineCharacter = fileExists ? '\n' : '';
+
+  fs.appendFile(filename, `${newLineCharacter}${thought}`, err => {
     if (err) return console.log(err);
-  })
+  });
   return 'Thought saved!';
 };
 
 exports.random = () => {
-  var a;
+  var output;
   getRandomThought(filename, (err, line) => {
-    if (err) return console.log(err);
-    a = line;
+    if (err) {
+      output = err;
+      return;
+    }
+    output = line;
   });
-  return a;
+  return output;
 };
