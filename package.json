@@ -1,0 +1,7 @@
+{
+  "name": "thoughts-cli",
+  "version": "1.0.0",
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
+}
