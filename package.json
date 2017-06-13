@@ -1,11 +1,13 @@
 {
   "name": "thoughts-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add and get thoughts",
   "license": "MIT",
   "repository": "aharris88/thoughts-cli",
   "author": "Adam Harris",
-  "bin": "./cli.js",
+  "bin": {
+    "thoughts": "./cli.js"
+  },
   "engines": {
     "node": ">=4"
   },
