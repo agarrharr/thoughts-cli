@@ -1,6 +1,23 @@
 {
   "name": "thoughts-cli",
   "version": "1.0.0",
+  "description": "Add and get thoughts",
+  "license": "MIT",
+  "repository": "aharris88/thoughts-cli",
+  "author": "Adam Harris",
+  "bin": "./cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "./cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "words",
+    "thoughts"
+  ],
   "dependencies": {
     "meow": "^3.7.0"
   }
