@@ -2,6 +2,12 @@
 
 > Add and get thoughts
 
+## Install
+
+```
+$ npm install --global thoughts-cli
+```
+
 ## Usage
 
 ```
