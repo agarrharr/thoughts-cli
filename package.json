@@ -1,6 +1,6 @@
 {
   "name": "thoughts-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add and get thoughts",
   "license": "MIT",
   "repository": "aharris88/thoughts-cli",
@@ -12,7 +12,8 @@
     "node": ">=4"
   },
   "files": [
-    "cli.js"
+    "cli.js",
+    "thoughts.js"
   ],
   "keywords": [
     "cli-app",
