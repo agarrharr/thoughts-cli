@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "description": "Add and get thoughts",
   "license": "MIT",
-  "repository": "aharris88/thoughts-cli",
-  "author": "Adam Harris",
+  "repository": "agarrharr/thoughts-cli",
+  "author": "Adam Garrett-Harris",
   "bin": {
     "thoughts": "cli.js"
   },
