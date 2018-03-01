@@ -20,6 +20,4 @@ $ thoughts --help
 
 ## License
 
-MIT © [Adam Harris](https://github.com/agarrharr)
-
-<a href="https://app.codesponsor.io/link/3owRGftAkghuGdjHaa955zEJ/agarrharr/thoughts-cli" rel="nofollow"><img src="https://app.codesponsor.io/embed/3owRGftAkghuGdjHaa955zEJ/agarrharr/thoughts-cli.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+MIT © [Adam Garrett-Harris](https://github.com/agarrharr)
